@@ -1,6 +1,6 @@
 # OpenLibrary Cover Proxy
 
-This project provides endpoints to query the OpenLibrary API for a random book from a list of work IDs. It is designed to be used as a proxy for the TRMNL app, Book by it's Cover.
+This project provides endpoints to query the OpenLibrary API for a random book from a list of work IDs. It is designed to be used as a proxy for the [TRMNL app](https://usetrmnl.com), Book by it's Cover.
 
 ## Features
 
@@ -11,12 +11,12 @@ This project provides endpoints to query the OpenLibrary API for a random book f
 
 1. Clone the repository
 2. Install dependencies: `pip install fastapi requests`
-3. Run the application: `uvicorn app:app --reload`
+3. Run the application: `fastapi run`
 
 ## Usage
 
 - Send a GET request to `/import` with a comma-separated list of OpenLibrary work IDs as a query parameter.
-- Example: `http://localhost:8000/import?work_ids=OL12345,OL67890`
+- Example: `http://localhost:8000/import?work_ids=OL25954563M,OL34928346M`
 
 ## API Response
 
